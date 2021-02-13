@@ -1,3 +1,3 @@
 export interface TestComponentProps {
-    $color: "red" | "green";
+  $color: "red" | "green";
 }

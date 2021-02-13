@@ -9,21 +9,22 @@ describe("Test Component", () => {
 
   beforeEach(() => {
     props = {
-      $color: "red"
+      $color: "red",
     };
   });
 
-  const renderComponent = () => render(<TestComponent data-testid="heading" {...props} />);
+  const renderComponent = () =>
+    render(<TestComponent data-testid="heading" {...props} />);
 
   it("should render Heading with red color", () => {
     const { getByTestId } = renderComponent();
-    expect(getByTestId('heading')).toHaveStyle("color: red")
+    expect(getByTestId("heading")).toHaveStyle("color: red");
   });
 
   it("should render Heading with green color", () => {
     props.$color = "green";
     const { getByTestId } = renderComponent();
 
-    expect(getByTestId('heading')).toHaveStyle("color: green")
+    expect(getByTestId("heading")).toHaveStyle("color: green");
   });
 });

@@ -1,0 +1,11 @@
+# Dependency directories
+node_modules
+
+#Package build
+build
+
+# Storybook build
+storybook/
+
+# Mac OS generated files
+.DS_Store
