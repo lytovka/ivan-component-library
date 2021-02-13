@@ -1,3 +1,3 @@
 export interface TestComponentProps {
-    theme: "primary" | "secondary";
+    $color: "red" | "green";
 }
