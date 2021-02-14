@@ -1,11 +1,11 @@
 import React from "react";
 import { render } from "@testing-library/react";
 
-import TestComponent from "./TestComponent";
-import { TestComponentProps } from "./TestComponent.types";
+import { TestComponent } from "./TestComponent";
+import { ITestComponentProps } from "./TestComponent.types";
 
 describe("Test Component", () => {
-  let props: TestComponentProps;
+  let props: ITestComponentProps;
 
   beforeEach(() => {
     props = {
@@ -18,6 +18,7 @@ describe("Test Component", () => {
 
   it("should render Heading with red color", () => {
     const { getByTestId } = renderComponent();
+
     expect(getByTestId("heading")).toHaveStyle("color: red");
   });
 
