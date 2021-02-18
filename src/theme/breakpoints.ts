@@ -1,4 +1,4 @@
-interface IBreakpoints {
+export interface IBreakpoints {
   xs: string;
   sm: string;
   md: string;

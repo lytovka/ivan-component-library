@@ -1,3 +1,2 @@
-export { breakpoints } from "./breakpoints";
+export { theme } from "./theme";
 export { MEDIA_QUERIES } from "./MediaQueries";
-export { fonts } from "./fonts";

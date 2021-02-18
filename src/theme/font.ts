@@ -1,4 +1,4 @@
-interface IFonts {
+export interface IFont {
   family: IFontFamily;
   size: { [TKey in FontScaleType]: string };
 }
@@ -10,13 +10,14 @@ interface IFontFamily {
   paragraph: string;
 }
 
+// Geometric progression
 const FONT_SIZE: { [TKey in FontScaleType]: string } = {
-  100: ".8rem",
-  200: "1rem",
-  300: "1.4rem",
-  400: "2rem",
-  500: "3.6rem",
-  600: "4rem",
+  100: ".4rem",
+  200: ".8rem",
+  300: "1.6rem",
+  400: "3.2rem",
+  500: "6.4rem",
+  600: "12.8rem",
 };
 
 const FONT_FAMILY: IFontFamily = {
@@ -24,7 +25,7 @@ const FONT_FAMILY: IFontFamily = {
   paragraph: "Domine, serif",
 };
 
-export const fonts: IFonts = {
+export const font: IFont = {
   family: FONT_FAMILY,
   size: FONT_SIZE,
 };
