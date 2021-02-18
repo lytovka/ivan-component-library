@@ -1,6 +1,6 @@
 export interface IFont {
   family: IFontFamily;
-  size: { [TKey in FontScaleType]: string };
+  size: Record<FontScaleType, string>;
 }
 
 type FontScaleType = 100 | 200 | 300 | 400 | 500 | 600;
@@ -11,7 +11,7 @@ interface IFontFamily {
 }
 
 // Geometric progression
-const FONT_SIZE: { [TKey in FontScaleType]: string } = {
+const FONT_SIZE: Record<FontScaleType, string> = {
   100: ".4rem",
   200: ".8rem",
   300: "1.6rem",

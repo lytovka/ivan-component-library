@@ -8,5 +8,5 @@ export default {
 export const Primary = () => <Heading fontColor="red">Red Heading</Heading>;
 
 export const Secondary = () => (
-  <Heading fontColor="green">Green Heading</Heading>
+  <Heading as="h4" fontColor="green">Green Heading</Heading>
 );
