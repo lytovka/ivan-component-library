@@ -1,6 +1,11 @@
-import { HTMLAttributes, HTMLProps, ReactNode } from "react";
-
-type IHeadingLevel = 1 | 2 | 3 | 4 | 5 | 6;
+import { HTMLAttributes } from "react";
+import { FontScaleType } from "../theme/font";
+import { FontWeightKeywordType, FontWeightNumericType } from "../theme/font";
 export interface IHeadingProps extends HTMLAttributes<HTMLHeadingElement> {
   fontColor?: string;
+  fontSize?: FontScaleType;
+  fontWeight?:
+    | Record<FontWeightKeywordType, FontWeightNumericType>
+    | FontWeightNumericType
+    | FontWeightKeywordType;
 }
