@@ -8,6 +8,6 @@ export const Heading = styled.h1<IHeadingProps>`
   display: block;
   font-family: ${theme.font.family.heading};
   font-size: ${(props) => theme.font.size[props.fontSize || 400]};
-  font-weight: ${(props) => props.fontSize || "400"};
+  font-weight: ${(props) => props.fontWeight || "400"};
   margin: 0;
 `;

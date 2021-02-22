@@ -4,8 +4,5 @@ import { FontWeightKeywordType, FontWeightNumericType } from "../theme/font";
 export interface IHeadingProps extends HTMLAttributes<HTMLHeadingElement> {
   fontColor?: string;
   fontSize?: FontScaleType;
-  fontWeight?:
-    | Record<FontWeightKeywordType, FontWeightNumericType>
-    | FontWeightNumericType
-    | FontWeightKeywordType;
+  fontWeight?: FontWeightNumericType | FontWeightKeywordType;
 }
