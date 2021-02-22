@@ -27,4 +27,4 @@ export default {
   },
 };
 
-export const Primary = (args) => <Heading {...args}>Red Heading</Heading>;
+export const DefaultHeading = (args) => <Heading {...args}>Default Heading</Heading>;

@@ -3,7 +3,18 @@ const path = require("path");
 module.exports = {
   stories: ["../src/**/*.stories.tsx"],
   // Add any Storybook addons you want here: https://storybook.js.org/addons/
-  addons: ["@storybook/addon-essentials"],
+  addons: [{
+    name: '@storybook/addon-essentials',
+    options: {
+      backgrounds: false,
+      viewport: false,
+      actions: false
+    }
+  }],
+  typescript: {
+    reactDocgen: false,
+  },
+  exclude: [/node_modules/, '/src/**/*/*.test.ts', '/src/**/*/*.test.tsx'],
   webpackFinal: async (config) => {
     config.module.rules.push({
       test: /\.(ts|tsx)$/,
