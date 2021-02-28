@@ -11,3 +11,9 @@ export const Heading = styled.h1<IHeadingProps>`
   font-weight: ${(props) => props.fontWeight || "400"};
   margin: 0;
 `;
+
+Heading.defaultProps = {
+  fontColor: "black",
+  fontSize: 400,
+  fontWeight: "400",
+};
